@@ -22,4 +22,11 @@ Install and Integrate the Universal Forwarder.
 Integrating and monitoring Coffely.THM's weblogs.
 Integrating Windows Event Logs.
 
+Splunk is pretty straight forward to install, I will have to go to the official Splunk website and install the application on the desired machine, which will be using the Linux OS. Splunk is already installed for the sake of this lab, but I need to unzip it. It is located in the downloads folder path /Downloads/Splunk. I run Sudo Su to make myself the Root User (Admin) and I 
+
+
+https://www.splunk.com/en_us/products/splunk-enterprise.html
+
+
+
 
