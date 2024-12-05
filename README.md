@@ -27,7 +27,16 @@ Splunk is pretty straight forward to install, I will have to go to the official 
 Now I need to run the Splunk license. To do this, I used the "cd"(change directory) command to make my way to the splunk folder and ran ./splunk start --accept-license. After this, it prompted me to create an admin account user name and password, which for learning purposes will be 1234 and 12345678. I now have splunk fully installed and ready to start using!
 
 Note: To reverse the "Sudo Su" command in Linux, put in the "Exit command".
+
 IMPORTANT NOTE: Originally the instructions where a little confusing since it only showed the application installing after the command tar xvzf splunk_installer.tgz. After a little research and going back to previous labs, I had to utilize the "cd" command to go to Downloads>Splunk and then utilize the "ls" command to show me the splunk installer file. Then, after I ran the xvzf splunk_installer.tgz command it installed as intended.  
+
+IMPORTANT COMMANDS:
+Splunk Start-This command is used to start the Splunk server. This command starts all the necessary Splunk processes and enables the server to accept incoming data. If the server is already running, this command will have no effect.
+Splunk Stop-This command is used to stop the Splunk server. This command stops all the running Splunk processes and disables the server from accepting incoming data. If the server is not running, this command will have no effect.
+Splunk Restart-This command is used to restart the Splunk server. This command stops all the running Splunk processes and then starts them again. This is useful when changes have been made to the Splunk configuration files or when the server needs to be restarted for any other reason.
+Splunk Add Oneshot-This command is used to add a single event to the Splunk index. This is useful for testing purposes or for adding individual events that may not be part of a larger data stream.
+Splunk Search- This command is used to search for data in the Splunk index. This command can be used to search for specific events, as well as to perform more complex searches using Splunk's search language.
+***Splunk Help- This is the most important, as it lists all of the help options. 
       
 
 
