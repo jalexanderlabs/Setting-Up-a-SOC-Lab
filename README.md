@@ -22,9 +22,11 @@ Install and Integrate the Universal Forwarder.
 Integrating and monitoring Coffely.THM's weblogs.
 Integrating Windows Event Logs.
 
-Splunk is pretty straight forward to install, I will have to go to the official Splunk website and install the application on the desired machine, which will be using the Linux OS. Splunk is already installed for the sake of this lab, but I need to unzip it. It is located in the downloads folder path /Downloads/Splunk. I run Sudo Su to make myself the Root User (Admin) and I 
+Splunk is pretty straight forward to install, I will have to go to the official Splunk website and install the application on the desired machine, which will be using the Linux OS. Splunk is already installed for the sake of this lab, but I need to unzip it. It is located in the downloads folder path /Downloads/Splunk. I run Sudo Su to make myself the Root User (Admin) and I use the "ls" command to navigate to the folder where Splunk is located. 
 
 Note: To reverse the "Sudo Su" command in Linux, put in the "Exit command".
+IMPORTANT NOTE: Originally the instructions where a little confusing since it only showed the application installing after the command tar xvzf splunk_installer.tgz. After a little research and going back to previous labs, I had to utilize the "cd" command to go to Downloads>Splunk and then utilize the "ls" command to show me the splunk installer file. Then, after I ran the xvzf splunk_installer.tgz command it installed as intended. 
+      
 
 https://www.splunk.com/en_us/products/splunk-enterprise.html
 
