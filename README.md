@@ -62,6 +62,8 @@ Note: Splunk forwarder runs on port 8089 by default.
 
 Configuring the Forwarder on Linux
 
+Now that the forwarder is installed, it needs to know where to send the data. So im going to configure it on the host end to send the data and configure Splunk so that it knows from where it is receiving the data.
+
 
 
 
