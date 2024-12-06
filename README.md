@@ -43,7 +43,25 @@ Splunk Search- This command is used to search for data in the Splunk index. This
 ***Splunk Help- This is the most important, as it lists all of the help options. 
 
 Splunk Data Ingestion
-      
+
+IMPORTANT: There are two primary types of forwarders in Splunk, and each one has a different use case. These are Heavy Forwarders and Universal Forwarders.
+
+Heavy Forwarders
+
+Heavy forwarders are used when we need to apply a filter, analyze or make changes to the logs at the source before forwarding it to the destination. I will be using the universal forwarder instead, however.
+
+Universal Forwarders
+
+It is a lightweight agent that gets installed on the target host, and its main purpose is to get the logs and send them to the Splunk instance or another forwarder without applying any filters or indexing. 
+
+Note: The universal forwarder has to be downloaded separately and has to be enabled before use. I will be using a universal forwarder to ingest logs.     
+
+After installing the forwarder with the command  tar xvzf splunkforwarder.tgz, then I move it to the opt location by using the command mv splunkforwarder /opt/ . Now im going to run the Splunk forwarder instance and give it credentials.Now that the forwarder is installed we have tell it what data to send and where to send it to.
+
+Note: Splunk forwarder runs on port 8089 by default. 
+
+Configuring the Forwarder on Linux
+
 
 
 
