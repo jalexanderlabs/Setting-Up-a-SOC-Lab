@@ -56,7 +56,7 @@ It is a lightweight agent that gets installed on the target host, and its main p
 
 Note: The universal forwarder has to be downloaded separately and has to be enabled before use. I will be using a universal forwarder to ingest logs.     
 
-After installing the forwarder with the command  tar xvzf splunkforwarder.tgz, then I move it to the opt location by using the command mv splunkforwarder /opt/ . Now im going to run the Splunk forwarder instance and give it credentials.Now that the forwarder is installed we have tell it what data to send and where to send it to.
+After installing the forwarder with the command  tar xvzf splunkforwarder.tgz, then I move it to the opt location by using the command mv splunkforwarder /opt/ . Now, I will need to give the Splunk installation the enteprise license it needs to function. To do this, I run im going to run the command ./bin/splunk start --accept-license. Then once accepted, it prompted me to create admin credentials to sign into Splunk enterprise. Now that the forwarder is installed we have tell it what data to send and where to send it to.
 
 Note: Splunk forwarder runs on port 8089 by default. 
 
