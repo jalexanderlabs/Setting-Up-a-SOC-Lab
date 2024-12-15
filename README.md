@@ -4,7 +4,7 @@ This write-up continues my learning of the Splunk Platform.I will be setting up 
 
 Objectives:
 
-In this lab, I will use two VMS, both Linux and Windows to install Splunk on the machines and integrate vital log sources through listening ports and installing forwarders.
+In this lab, I will install Splunk in Linux and integrate vital log sources through listening ports and installing forwarders.
 Note: From my previous labs, a forwarder in splunk forwards the data it recieves from network traffic to the indexer so that this information can get ingested and turned into information we can use. A listening port is a port that waits to recieve network request from a UDP or TCP port. 
 
 
@@ -15,12 +15,6 @@ Install and integrate Universal Forwarder.
 Collecting Logs from important logs sources/files like syslog, auth.log, audited, etc.
 
 
-Windows Lab
-
-Install Splunk on Windows Machine.
-Install and Integrate the Universal Forwarder.
-Integrating and monitoring Coffely.THM's weblogs.
-Integrating Windows Event Logs.
 
 Splunk Installation 
 
@@ -62,7 +56,9 @@ Note: Splunk forwarder runs on port 8089 by default.
 
 Configuring the Forwarder on Linux
 
-Now that the forwarder is installed, it needs to know where to send the data. So im going to configure it on the host end to send the data and configure Splunk so that it knows from where it is receiving the data.
+Now that the forwarder is installed, it needs to know where to send the data. So im going to configure it on the host end to send the data and configure Splunk so that it knows from where it is receiving the data. To do this, I logged into my newly created Splunk account and go to the settings and navigate to "forwarding and recieving".By default, the Splunk instance receives data from the forwarder on the port 9997, so I will use this. Now that the listening port has been configured, I need to create and index for storing all of this wonderful data. I create a new index and for simplicity I will name it Linux_host. Now to configure the forwarder. I navigated over to where the forwarder installation was moved by throwing in the cd /opt/splunkforwarder/bin command and running the ./splunk add forward-server 10.10.218.83:9997 command. This command essentially tells the splunk forwarder to forward all of its data to the host at 10.10.218.83 through port 9997 (default port for Splunk indexer).
+
+Once 
 
 
 
